@@ -1,0 +1,397 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Alata&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap"
+      rel="stylesheet"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="tailwind.config.js"></script>
+    <title>Frontend Mentor | Loopstudios landing page</title>
+  </head>
+  <body class="font-JosefinSans">
+    <div class="">
+      <nav
+        class="h-[100vh] px-7 lg:px-14 xl:px-24 2xl:px-40 bg-[url('images/mobile/image-hero.jpg')] md:bg-[url('images/desktop/image-hero.jpg')] relative bg-no-repeat md:bg-center bg-cover text-white md:h-[100vh]"
+      >
+        <div class="flex items-center justify-between py-10 lg:py-14">
+          <div class="flex items-center justify-between w-full">
+            <img src="images/logo.svg" alt="" />
+            <img
+              class="md:hidden"
+              id="menuIcon"
+              src="images/icon-hamburger.svg"
+              alt=""
+            />
+          </div>
+          <div class="">
+            <ul class="text-lg flex gap-x-7 lg:gap-x-10 hidden md:flex">
+              <li
+                class="w-fit relative after:content-[''] after:w-full after:h-[2px] after:absolute after:left-0 after:bottom-0 after:bg-white after:transition-transform after:ease-linear after:scale-x-0 after:scale-y-[1] hover:after:scale-x-[1] hover:after:scale-y-[1]"
+              >
+                About
+              </li>
+              <li
+                class="w-fit relative after:content-[''] after:w-full after:h-[2px] after:absolute after:left-0 after:bottom-0 after:bg-white after:transition-transform after:ease-linear after:scale-x-0 after:scale-y-[1] hover:after:scale-x-[1] hover:after:scale-y-[1]"
+              >
+                Careers
+              </li>
+              <li
+                class="w-fit relative after:content-[''] after:w-full after:h-[2px] after:absolute after:left-0 after:bottom-0 after:bg-white after:transition-transform after:ease-linear after:scale-x-0 after:scale-y-[1] hover:after:scale-x-[1] hover:after:scale-y-[1]"
+              >
+                Events
+              </li>
+              <li
+                class="w-fit relative after:content-[''] after:w-full after:h-[2px] after:absolute after:left-0 after:bottom-0 after:bg-white after:transition-transform after:ease-linear after:scale-x-0 after:scale-y-[1] hover:after:scale-x-[1] hover:after:scale-y-[1]"
+              >
+                Products
+              </li>
+              <li
+                class="relative after:content-[''] after:w-full after:h-[2px] after:absolute after:left-0 after:bottom-0 after:bg-white after:transition-transform after:ease-linear after:scale-x-0 after:scale-y-[1] hover:after:scale-x-[1] hover:after:scale-y-[1]"
+              >
+                Support
+              </li>
+            </ul>
+          </div>
+          <div
+            class="fixed px-7 left-0 w-full top-0 bg-black inset-0 translate-x-[100%] transition-all z-[10000] md:hidden"
+            id="mobileMenu"
+          >
+            <div class="flex items-center justify-between w-full py-10">
+              <img src="images/logo.svg" alt="" />
+              <img
+                id="closeIcon"
+                class="w-[18px]"
+                src="images/icon-close.svg"
+                alt=""
+              />
+            </div>
+            <div class="">
+              <ul
+                class="text-lg font-[300] uppercase flex flex-col gap-y-5 absolute top-[50%] translate-y-[-50%]"
+              >
+                <li
+                  class="w-fit relative after:content-[''] after:w-full after:h-[2px] after:absolute after:left-0 after:bottom-0 after:bg-white after:transition-transform after:ease-linear after:scale-x-0 after:scale-y-[1] hover:after:scale-x-[1] hover:after:scale-y-[1]"
+                >
+                  About
+                </li>
+                <li
+                  class="w-fit relative after:content-[''] after:w-full after:h-[2px] after:absolute after:left-0 after:bottom-0 after:bg-white after:transition-transform after:ease-linear after:scale-x-0 after:scale-y-[1] hover:after:scale-x-[1] hover:after:scale-y-[1]"
+                >
+                  Careers
+                </li>
+                <li
+                  class="w-fit relative after:content-[''] after:w-full after:h-[2px] after:absolute after:left-0 after:bottom-0 after:bg-white after:transition-transform after:ease-linear after:scale-x-0 after:scale-y-[1] hover:after:scale-x-[1] hover:after:scale-y-[1]"
+                >
+                  Events
+                </li>
+                <li
+                  class="w-fit relative after:content-[''] after:w-full after:h-[2px] after:absolute after:left-0 after:bottom-0 after:bg-white after:transition-transform after:ease-linear after:scale-x-0 after:scale-y-[1] hover:after:scale-x-[1] hover:after:scale-y-[1]"
+                >
+                  Products
+                </li>
+                <li
+                  class="relative after:content-[''] after:w-full after:h-[2px] after:absolute after:left-0 after:bottom-0 after:bg-white after:transition-transform after:ease-linear after:scale-x-0 after:scale-y-[1] hover:after:scale-x-[1] hover:after:scale-y-[1]"
+                >
+                  Support
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div
+          class="border border-white p-5 top-[50%] translate-y-[-50%] w-[calc(100%-3.5rem)] sm:p-8 max-w-[500px] lg:max-w-[650px] absolute"
+        >
+          <h1
+            class="text-4xl ftf:text-5xl sm:text-6xl ftf:text-[3rem] uppercase font-[300] max-w-[200px] md:max-w-[none] xl:text-7xl"
+          >
+            Immersive experiences that deliver
+          </h1>
+        </div>
+      </nav>
+      <section>
+        <div class="px-7 py-20 lg:py-36">
+          <div
+            class="flex flex-col md:flex-row items-center md:items-end justify-center"
+          >
+            <img
+              class="w-full md:w-[70%] max-w-[800px]"
+              src="images/mobile/image-interactive.jpg"
+              alt=""
+            />
+            <div
+              class="mt-10 max-w-[720px] md:text-start text-center md:mt-0 md:bg-white md:px-8 md:pt-8 lg:px-16 lg:pt-16 md:ml-[-150px] 2xl:mb-[-10px] xl:px-24 xl:pt-24"
+            >
+              <h1 class="font-[300] uppercase text-4xl xl:text-5xl">
+                The leader in interactive VR
+              </h1>
+              <p class="text-DarkGray mt-5 text-[16px] xl:text-lg">
+                Founded in 2011, Loopstudios has been producing world-class
+                virtual reality projects for some of the best companies around
+                the globe. Our award-winning creations have transformed
+                businesses through digital experiences that bind to their brand.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section>
+        <div>
+          <div class="md:pb-28">
+            <div
+              class="grid mx-auto gap-y-5 px-5 md:max-w-[850px] lg:max-w-[1100px]"
+            >
+              <div
+                class="flex items-center justify-center md:justify-between mb-14"
+              >
+                <h1 class="uppercase font-[300] text-4xl xl:text-[2.8rem]">
+                  Our creations
+                </h1>
+                <button
+                  class="hidden md:flex font-Alata border-2 border-black px-10 py-2 tracking-[5px] uppercase text-center hover:bg-black hover:text-white transition-all"
+                >
+                  See all
+                </button>
+              </div>
+              <div
+                class="grid gap-y-5 place-content-center md:grid-cols-[repeat(auto-fit,minmax(200px,1fr))] md:gap-x-7 md:gap-y-7"
+              >
+                <div
+                  class="relative md:group md:after:content-[''] md:after:absolute md:after:w-full md:after:h-full md:after:hover:bg-[hsl(0_0%_100%/.6)] md:after:inset-0 md:after:transition-all"
+                >
+                  <img
+                    class="md:hidden brightness-[.8]"
+                    src="images/mobile/image-deep-earth.jpg"
+                    alt=""
+                  />
+                  <img
+                    class="hidden md:flex brightness-[.8]"
+                    src="images/desktop/image-deep-earth.jpg"
+                    alt=""
+                  />
+                  <h1
+                    class="text-white absolute bottom-0 uppercase font-[300] z-[2000] text-3xl ftf:text-4xl p-5 ftf:p-7 group-hover:text-black"
+                  >
+                    Deep<br />earth
+                  </h1>
+                </div>
+                <div
+                  class="relative md:group md:after:content-[''] md:after:absolute md:after:w-full md:after:h-full md:after:hover:bg-[hsl(0_0%_100%/.6)] md:after:inset-0 md:after:transition-all"
+                >
+                  <img
+                    class="md:hidden brightness-[.8]"
+                    src="images/mobile/image-night-arcade.jpg"
+                    alt=""
+                  />
+                  <img
+                    class="md:flex hidden brightness-[.8]"
+                    src="images/desktop/image-night-arcade.jpg"
+                    alt=""
+                  />
+                  <h1
+                    class="text-white absolute bottom-0 uppercase font-[300] z-[2000] text-3xl ftf:text-4xl p-5 ftf:p-7 group-hover:text-black"
+                  >
+                    Night<br />Arcade
+                  </h1>
+                </div>
+                <div
+                  class="relative md:group md:after:content-[''] md:after:absolute md:after:w-full md:after:h-full md:after:hover:bg-[hsl(0_0%_100%/.6)] md:after:inset-0 md:after:transition-all"
+                >
+                  <img
+                    class="md:hidden brightness-[0.8]"
+                    src="images/mobile/image-soccer-team.jpg"
+                    alt=""
+                  />
+                  <img
+                    class="md:flex hidden brightness-[0.8]"
+                    src="images/desktop/image-soccer-team.jpg"
+                    alt=""
+                  />
+                  <h1
+                    class="text-white absolute bottom-0 uppercase font-[300] z-[2000] text-3xl ftf:text-4xl p-5 ftf:p-7 group-hover:text-black"
+                  >
+                    Soccer<br />Team VR
+                  </h1>
+                </div>
+                <div
+                  class="relative md:group md:after:content-[''] md:after:absolute md:after:w-full md:after:h-full md:after:hover:bg-[hsl(0_0%_100%/.6)] md:after:inset-0 md:after:transition-all"
+                >
+                  <img
+                    class="md:hidden brightness-[.8]"
+                    src="images/mobile/image-grid.jpg"
+                    alt=""
+                  />
+                  <img
+                    class="md:flex hidden brightness-[0.8]"
+                    src="images/desktop/image-grid.jpg"
+                    alt=""
+                  />
+                  <h1
+                    class="text-white absolute bottom-0 uppercase font-[300] text-3xl z-[2000] ftf:text-4xl p-5 ftf:p-7 group-hover:text-black"
+                  >
+                    The<br />Grid
+                  </h1>
+                </div>
+                <div
+                  class="relative md:group md:after:content-[''] md:after:absolute md:after:w-full md:after:h-full md:after:hover:bg-[hsl(0_0%_100%/.6)] md:after:inset-0 md:after:transition-all"
+                >
+                  <img
+                    class="brightness-[.8] md:hidden"
+                    src="images/mobile/image-from-above.jpg"
+                    alt=""
+                  />
+                  <img
+                    class="md:flex hidden brightness-[.8]"
+                    src="images/desktop/image-from-above.jpg"
+                    alt=""
+                  />
+                  <h1
+                    class="text-white absolute bottom-0 uppercase font-[300] text-3xl z-[2000] ftf:text-4xl p-5 ftf:p-7 group-hover:text-black"
+                  >
+                    From Up<br />Above Vr
+                  </h1>
+                </div>
+                <div
+                  class="relative md:group md:after:content-[''] md:after:absolute md:after:w-full md:after:h-full md:after:hover:bg-[hsl(0_0%_100%/.6)] md:after:inset-0 md:after:transition-all"
+                >
+                  <img
+                    class="brightness-[.8] md:hidden"
+                    src="images/mobile/image-pocket-borealis.jpg"
+                    alt=""
+                  />
+                  <img
+                    class="md:flex hidden brightness-[.8]"
+                    src="images/desktop/image-pocket-borealis.jpg"
+                    alt=""
+                  />
+                  <h1
+                    class="text-white absolute bottom-0 uppercase font-[300] text-3xl z-[2000] ftf:text-4xl p-5 ftf:p-7 group-hover:text-black"
+                  >
+                    Pocket<br />Borealis
+                  </h1>
+                </div>
+                <div
+                  class="relative md:group md:after:content-[''] md:after:absolute md:after:w-full md:after:h-full md:after:hover:bg-[hsl(0_0%_100%/.6)] md:after:inset-0 md:after:transition-all"
+                >
+                  <img
+                    class="brightness-[.8] md:hidden"
+                    src="images/mobile/image-curiosity.jpg"
+                    alt=""
+                  />
+                  <img
+                    class="md:flex hidden brightness-[.8]"
+                    src="images/desktop/image-curiosity.jpg"
+                    alt=""
+                  />
+                  <h1
+                    class="text-white absolute bottom-0 uppercase font-[300] text-3xl z-[2000] ftf:text-4xl p-5 ftf:p-7 md:group-hover:text-black md:z-[2000]"
+                  >
+                    The<br />Curiosity
+                  </h1>
+                </div>
+                <div
+                  class="relative md:group md:after:content-[''] md:after:absolute md:after:w-full md:after:h-full md:after:hover:bg-[hsl(0_0%_100%/.6)] md:after:inset-0 md:after:transition-all"
+                >
+                  <img
+                    class="brightness-[.8] md:hidden"
+                    src="images/mobile/image-fisheye.jpg"
+                    alt=""
+                  />
+                  <img
+                    class="md:flex hidden brightness-[.8]"
+                    src="images/desktop/image-fisheye.jpg"
+                    alt=""
+                  />
+                  <h1
+                    class="text-white absolute bottom-0 uppercase font-[300] text-3xl z-[2000] ftf:text-4xl p-5 ftf:p-7 group-hover:text-black"
+                  >
+                    Make It<br />FishEye
+                  </h1>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="flex justify-center items-center mt-10 md:hidden">
+            <button
+              class="font-Alata text-2xl border-2 border-black px-10 py-2 tracking-[5px] uppercase text-center mb-20 hover:bg-black hover:text-white transition-all"
+            >
+              See all
+            </button>
+          </div>
+        </div>
+      </section>
+      <footer
+        class="bg-black px-5 py-16 lg:px-10 xl:px-20 2xl:px-40 text-white"
+      >
+        <div
+          class="flex flex-col items-center justify-center md:flex-row md:justify-between"
+        >
+          <div class="">
+            <img src="images/logo.svg" alt="" />
+            <ul
+              class="text-lg font-Alata gap-y-3 flex flex-col items-center justify-center mt-10 md:mt-5 md:flex-row md:gap-x-5 lg:gap-x-10"
+            >
+              <li
+                class="relative after:content-[''] after:w-full after:h-[2px] after:absolute after:left-0 after:bottom-0 after:bg-white after:transition-transform after:ease-linear after:scale-x-0 after:scale-y-[1] hover:after:scale-x-[1] hover:after:scale-y-[1]"
+              >
+                About
+              </li>
+              <li
+                class="relative after:content-[''] after:w-full after:h-[2px] after:absolute after:left-0 after:bottom-0 after:bg-white after:transition-transform after:ease-linear after:scale-x-0 after:scale-y-[1] hover:after:scale-x-[1] hover:after:scale-y-[1]"
+              >
+                Careers
+              </li>
+              <li
+                class="relative after:content-[''] after:w-full after:h-[2px] after:absolute after:left-0 after:bottom-0 after:bg-white after:transition-transform after:ease-linear after:scale-x-0 after:scale-y-[1] hover:after:scale-x-[1] hover:after:scale-y-[1]"
+              >
+                Events
+              </li>
+              <li
+                class="relative after:content-[''] after:w-full after:h-[2px] after:absolute after:left-0 after:bottom-0 after:bg-white after:transition-transform after:ease-linear after:scale-x-0 after:scale-y-[1] hover:after:scale-x-[1] hover:after:scale-y-[1]"
+              >
+                Products
+              </li>
+              <li
+                class="relative after:content-[''] after:w-full after:h-[2px] after:absolute after:left-0 after:bottom-0 after:bg-white after:transition-transform after:ease-linear after:scale-x-0 after:scale-y-[1] hover:after:scale-x-[1] hover:after:scale-y-[1]"
+              >
+                Support
+              </li>
+            </ul>
+          </div>
+          <div class="flex flex-col items-center justify-center md:items-end">
+            <div class="flex items-center gap-x-5 mt-14 md:mt-0">
+              <div
+                class="relative after:content-[''] after:w-full after:h-[2px] after:absolute after:left-0 after:bottom-0 after:bg-white after:transition-transform after:ease-linear after:scale-x-0 after:scale-y-[1] hover:after:scale-x-[1] hover:after:scale-y-[1] pb-[6px]"
+              >
+                <img class="w-[30px]" src="images/icon-facebook.svg" alt="" />
+              </div>
+              <div
+                class="relative after:content-[''] after:w-full after:h-[2px] after:absolute after:left-0 after:bottom-0 after:bg-white after:transition-transform after:ease-linear after:scale-x-0 after:scale-y-[1] hover:after:scale-x-[1] hover:after:scale-y-[1] pb-[6px]"
+              >
+                <img class="w-[30px]" src="images/icon-twitter.svg" alt="" />
+              </div>
+              <div
+                class="relative after:content-[''] after:w-full after:h-[2px] after:absolute after:left-0 after:bottom-0 after:bg-white after:transition-transform after:ease-linear after:scale-x-0 after:scale-y-[1] hover:after:scale-x-[1] hover:after:scale-y-[1] pb-[6px]"
+              >
+                <img class="w-[30px]" src="images/icon-pinterest.svg" alt="" />
+              </div>
+              <div
+                class="relative after:content-[''] after:w-full after:h-[2px] after:absolute after:left-0 after:bottom-0 after:bg-white after:transition-transform after:ease-linear after:scale-x-0 after:scale-y-[1] hover:after:scale-x-[1] hover:after:scale-y-[1] pb-[6px]"
+              >
+                <img class="w-[30px]" src="images/icon-instagram.svg" alt="" />
+              </div>
+            </div>
+            <p class="font-Alata mt-5 text-DarkGray text-lg">
+              © 2021 Loopstudios. All rights reserved.
+            </p>
+          </div>
+        </div>
+      </footer>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
